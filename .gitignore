@@ -15,9 +15,8 @@
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
 
-###> phpstorm ###
+###> local ###
 .idea
-###< phpstorm ###
-
-bundles
 .DS_Store
+node_modules
+###< local ###

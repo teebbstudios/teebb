@@ -5,7 +5,9 @@
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "api-platform/api-pack": "^1.2",
         "sensio/framework-extra-bundle": "^5.1",
+        "stof/doctrine-extensions-bundle": "^1.4",
         "symfony/asset": "5.0.*",
         "symfony/console": "5.0.*",
         "symfony/dotenv": "5.0.*",
@@ -27,7 +29,8 @@
         "symfony/twig-pack": "*",
         "symfony/validator": "5.0.*",
         "symfony/web-link": "5.0.*",
-        "symfony/yaml": "5.0.*"
+        "symfony/yaml": "5.0.*",
+        "teebbstudios/core-bundle": "*@dev"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
@@ -80,5 +83,11 @@
             "allow-contrib": false,
             "require": "5.0.*"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../TeebbCoreBundle"
+        }
+    ]
 }
