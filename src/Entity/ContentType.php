@@ -13,7 +13,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Teebb\CoreBundle\Entity\EntityType\ContentType as BaseContentType;
+use Teebb\CoreBundle\Entity\Types\ContentType as BaseContentType;
 
 /**
  * @ORM\Entity

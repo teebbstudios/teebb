@@ -1,0 +1,4 @@
+_teebb_core:
+    resource: .
+    type: entity_type
+    prefix: /admin
