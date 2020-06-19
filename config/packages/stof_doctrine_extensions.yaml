@@ -1,10 +1,16 @@
 # Read the documentation: https://symfony.com/doc/current/bundles/StofDoctrineExtensionsBundle/index.html
 # See the official DoctrineExtensions documentation for more details: https://github.com/Atlantic18/DoctrineExtensions/tree/master/doc/
 stof_doctrine_extensions:
-    default_locale: en_US
+    default_locale: '%locale%'
     orm:
         default:
-            sluggable: true
-            timestampable: true
-            loggable: true
-            sortable: true
+            translatable:         true
+            timestampable:        true
+            blameable:            true
+            sluggable:            true
+            tree:                 true
+            loggable:             true
+            sortable:             true
+            softdeleteable:       true
+            uploadable:           true
+            reference_integrity:  true
