@@ -4,6 +4,7 @@ teebb_core:
 
     fly_system:
         service: '%fly_system_service%'
+        #此变量用于生成上传文件的链接
         root_host_url: '%fly_system_host%/uploads'
 
     assets:
@@ -30,19 +31,31 @@ oneup_flysystem:
             alias: League\Flysystem\Filesystem
 
 liip_imagine:
+
     resolvers:
-        profile_photos:
+        flysystem_images_resolver:
             flysystem:
                 filesystem_service: '%fly_system_service%'
-                root_url:           '%fly_system_host%'
+                root_url:           '%fly_system_host%/uploads' #用于生成图像链接
                 cache_prefix:       media/cache
                 visibility:         public
+    # default cache resolver for saving thumbnails
+    cache: flysystem_images_resolver
 
     loaders:
         flysystem_images:
             flysystem:
                 filesystem_service: '%fly_system_service%'
+    # default loader to use for all filter sets
     data_loader: flysystem_images
+
+    filter_sets:
+        squared_thumbnail_small:
+            filters:
+                thumbnail:
+                    size:          [100, 100]
+                    mode:          outbound
+                    allow_upscale: true
 
 doctrine:
     orm:

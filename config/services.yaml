@@ -6,7 +6,7 @@
 parameters:
     locale: 'zh_CN'
     fly_system_service: oneup_flysystem.public_dir_filesystem_filesystem
-    fly_system_host: 'http://localhost'
+    fly_system_host: 'http://localhost:8000'
 
 services:
     # default configuration for services in *this* file
