@@ -2,6 +2,10 @@ teebb_core:
     mapping:
         directories: ['%kernel.project_dir%/src']
 
+    fly_system:
+        service: '%fly_system_service%'
+        root_host_url: '%fly_system_host%/uploads'
+
     assets:
         extra:
             transliteration:
@@ -11,6 +15,34 @@ teebb_core:
                 js_path: vendor/video.js/video.min.js
                 css_path: vendor/video.js/video-js.min.css
 
+            sortablejs:
+                js_path: vendor/sortablejs/Sortable.min.js
+
+oneup_flysystem:
+    adapters:
+        public_dir_adapter:
+            local:
+                directory: '%kernel.project_dir%/public/uploads'
+
+    filesystems:
+        public_dir_filesystem:
+            adapter: public_dir_adapter
+            alias: League\Flysystem\Filesystem
+
+liip_imagine:
+    resolvers:
+        profile_photos:
+            flysystem:
+                filesystem_service: '%fly_system_service%'
+                root_url:           '%fly_system_host%'
+                cache_prefix:       media/cache
+                visibility:         public
+
+    loaders:
+        flysystem_images:
+            flysystem:
+                filesystem_service: '%fly_system_service%'
+    data_loader: flysystem_images
 
 doctrine:
     orm:

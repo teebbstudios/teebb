@@ -2,3 +2,11 @@ _teebb_core:
     resource: .
     type: entity_type
     prefix: /admin
+
+_teebb_content:
+    resource: "@TeebbCoreBundle/Resources/config/routing/content.xml"
+    prefix: /admin
+
+_teebb_file:
+    resource: "@TeebbCoreBundle/Resources/config/routing/file.xml"
+    prefix: /admin

@@ -20,4 +20,8 @@
 .DS_Store
 node_modules
 public/vendor/
+public/uploads/
 ###< local ###
+###> liip/imagine-bundle ###
+/public/media/cache/
+###< liip/imagine-bundle ###
