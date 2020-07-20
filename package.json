@@ -32,6 +32,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.8.2",
+        "autocomplete.js": "^0.37.1",
         "bootstrap": "^4.3.1",
         "bootstrap-select": "^1.13.10",
         "chart.js": "^2.8.0",

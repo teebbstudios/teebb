@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d07fa0fb07ddb47fa5f53e6d76b68b53",
+    "content-hash": "dac8175329fb2e90ee690644aa01a8db",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -204,6 +204,86 @@
                 "swagger"
             ],
             "time": "2020-04-21T14:00:17+00:00"
+        },
+        {
+            "name": "babdev/pagerfanta-bundle",
+            "version": "v2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BabDev/BabDevPagerfantaBundle.git",
+                "reference": "602f4847b27d72364b49b31d15dfc02a59aaece8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BabDev/BabDevPagerfantaBundle/zipball/602f4847b27d72364b49b31d15dfc02a59aaece8",
+                "reference": "602f4847b27d72364b49b31d15dfc02a59aaece8",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "pagerfanta/pagerfanta": "^2.2.1",
+                "php": "^7.2",
+                "symfony/config": "^3.4 || ^4.4 || ^5.0",
+                "symfony/dependency-injection": "^3.4 || ^4.4 || ^5.0",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/http-foundation": "^3.4 || ^4.4 || ^5.0",
+                "symfony/http-kernel": "^3.4 || ^4.4 || ^5.0",
+                "symfony/property-access": "^3.4 || ^4.4 || ^5.0",
+                "symfony/routing": "^3.4 || ^4.4 || ^5.0"
+            },
+            "conflict": {
+                "twig/twig": "<1.34 || >=2.0,<2.4",
+                "white-october/pagerfanta-bundle": "*"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.8",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+                "phpunit/phpunit": "^8.5 || ^9.0",
+                "symfony/translation": "^3.4 || ^4.4 || ^5.0",
+                "symfony/twig-bridge": "^3.4 || ^4.4 || ^5.0",
+                "twig/twig": "^1.34 || ^2.4 || ^3.0"
+            },
+            "suggest": {
+                "symfony/translation": "To use the Pagerfanta views with translation support",
+                "twig/twig": "To integrate Pagerfanta with Twig through extensions"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BabDev\\PagerfantaBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Bundle integrating Pagerfanta with Symfony",
+            "keywords": [
+                "pagerfanta",
+                "pagination",
+                "symfony"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/mbabker",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-06-30T14:02:17+00:00"
         },
         {
             "name": "behat/transliterator",

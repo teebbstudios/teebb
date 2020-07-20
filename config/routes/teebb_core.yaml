@@ -6,7 +6,13 @@ _teebb_core:
 _teebb_content:
     resource: "@TeebbCoreBundle/Resources/config/routing/content.xml"
     prefix: /admin
+    defaults:
+        entity_type_service: '%entity_type.content.service%'
 
 _teebb_file:
     resource: "@TeebbCoreBundle/Resources/config/routing/file.xml"
+    prefix: /admin
+
+_teebb_formatter:
+    resource: "@TeebbCoreBundle/Resources/config/routing/formatter.xml"
     prefix: /admin

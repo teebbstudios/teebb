@@ -31,6 +31,9 @@ function clean() {
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
+    // autocomplete JS
+    var autocomplete = gulp.src('./node_modules/autocomplete.js/dist/*')
+        .pipe(gulp.dest('./public/vendor/autocomplete.js/js'));
     // Bootstrap JS
     var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/*')
         .pipe(gulp.dest('./public/vendor/bootstrap/js'));
@@ -124,7 +127,7 @@ function modules() {
     ])
         .pipe(gulp.dest('./public/vendor/nestable'));
 
-    return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing,
+    return merge(autocomplete, bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing,
         sweetalert2, sortableJs, bootstrapSelect, transliteration, dropzone, fabric, tuiCodeSnippet, tuiColorPicker,
         fileSaver, tuiImageEditor, tuiImageEditorExamples, videoJs, nestable,
     );

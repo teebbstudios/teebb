@@ -7,6 +7,23 @@ teebb_core:
         #此变量用于生成上传文件的链接
         root_host_url: '%fly_system_host%/uploads'
 
+    filter_settings:
+        strip_tags:
+            filter_class: Teebb\CoreBundle\TextFilter\StripTagsFilter
+            filter_label: teebb.core.form.strip_tags_filter
+            extra_form_type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            extra_label: teebb.core.form.strip_tags_filter_extra
+            extra_help: teebb.core.form.strip_tags_filter_extra_help
+
+        nl2br:
+            filter_class: Teebb\CoreBundle\TextFilter\Nl2brFilter
+            filter_label: teebb.core.form.nl2br_filter
+
+        escape_html:
+            filter_class: Teebb\CoreBundle\TextFilter\EscapeHtmlFilter
+            filter_label: teebb.core.form.escape_html_filter
+
+
     assets:
         extra:
             transliteration:
@@ -18,6 +35,9 @@ teebb_core:
 
             sortablejs:
                 js_path: vendor/sortablejs/Sortable.min.js
+
+            autocompletejs:
+                js_path: vendor/autocomplete.js/js/autocomplete.min.js
 
 oneup_flysystem:
     adapters:
@@ -56,6 +76,15 @@ liip_imagine:
                     size:          [100, 100]
                     mode:          outbound
                     allow_upscale: true
+
+fos_ck_editor:
+    configs:
+        basic:
+            toolbar: basic
+        standard:
+            toolbar: standard
+        full:
+            toolbar: full
 
 doctrine:
     orm:
