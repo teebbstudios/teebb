@@ -37,7 +37,7 @@ teebb_core:
                 js_path: vendor/sortablejs/Sortable.min.js
 
             autocompletejs:
-                js_path: vendor/autocomplete.js/js/autocomplete.min.js
+                js_path: vendor/autocomplete.js/js/autocomplete.jquery.min.js
 
 oneup_flysystem:
     adapters:
