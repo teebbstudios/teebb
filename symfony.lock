@@ -98,6 +98,9 @@
     "doctrine/reflection": {
         "version": "1.2.1"
     },
+    "doctrine/sql-formatter": {
+        "version": "1.1.0"
+    },
     "egulias/email-validator": {
         "version": "2.1.17"
     },
@@ -133,9 +136,6 @@
     },
     "imagine/imagine": {
         "version": "1.2.3"
-    },
-    "jdorn/sql-formatter": {
-        "version": "v1.2.17"
     },
     "league/flysystem": {
         "version": "1.0.69"
@@ -466,6 +466,9 @@
     },
     "symfony/polyfill-php73": {
         "version": "v1.17.0"
+    },
+    "symfony/polyfill-php80": {
+        "version": "v1.18.0"
     },
     "symfony/process": {
         "version": "v5.0.8"
