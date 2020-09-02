@@ -1,14 +1,35 @@
 security:
+    encoders:
+        Teebb\CoreBundle\Entity\User:
+            algorithm: auto
+
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        users_in_memory: { memory: null }
+        user_provider:
+            entity:
+                class: Teebb\CoreBundle\Entity\User
+                property: username
+
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
             anonymous: lazy
-            provider: users_in_memory
+            provider: user_provider
+
+            logout:
+                path: teebb_user_logout
+
+            guard:
+                authenticators:
+                    - Teebb\CoreBundle\Security\LoginFormAuthenticator
+
+            user_checker: Teebb\CoreBundle\Security\UserChecker
+
+            remember_me:
+                secret:   '%kernel.secret%'
+                lifetime: 604800 # 7 days in seconds
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
@@ -19,5 +40,5 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+    # - { path: ^/admin, roles: ROLE_ADMIN }
+    # - { path: ^/profile, roles: ROLE_USER }
