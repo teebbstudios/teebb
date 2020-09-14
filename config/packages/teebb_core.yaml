@@ -23,7 +23,6 @@ teebb_core:
             filter_class: Teebb\CoreBundle\TextFilter\EscapeHtmlFilter
             filter_label: teebb.core.form.escape_html_filter
 
-
     assets:
         extra:
             transliteration:
@@ -51,7 +50,6 @@ oneup_flysystem:
             alias: League\Flysystem\Filesystem
 
 liip_imagine:
-
     resolvers:
         flysystem_images_resolver:
             flysystem:
@@ -79,12 +77,12 @@ liip_imagine:
 
 fos_ck_editor:
     configs:
-        basic:
-            toolbar: basic
-        standard:
-            toolbar: standard
         full:
             toolbar: full
+        standard:
+            toolbar: standard
+        basic:
+            toolbar: basic
 
 doctrine:
     orm:
