@@ -1,4 +1,84 @@
 teebb_core:
+    #Dashboard 侧边栏菜单
+    side_menu:
+        content:
+            content:
+                label: Content
+                icon: fa-file-alt
+                items:
+                    -   label: Add Content
+                        route: teebb_content_create_index
+                        #route_params: {typeAlias: content}
+                        groups: []
+                    -   label: Manage Content
+                        route: teebb_content_index
+                        groups: []
+                groups: []
+            type:
+                label: Type
+                icon: fa-boxes
+                items:
+                    -   label: Add Type
+                        route: content_create
+                        groups: []
+                    -   label: Manage Type
+                        route: content_index
+                        groups: []
+                groups: []
+            taxonomy:
+                label: Taxonomy
+                icon: fa-tags
+                items:
+                    -   label: Add Taxonomy
+                        route: taxonomy_create
+                        groups: []
+                    -   label: Manage Taxonomy
+                        route: taxonomy_index
+                        groups: []
+                groups: []
+        other:
+            menu:
+                label: Menu
+                icon: fa-list
+                items:
+                    -   label: Add Menu
+                        route: taxonomy_create
+                        groups: []
+                    -   label: Manage Menu
+                        route: taxonomy_index
+                        groups: []
+                groups: []
+            comment:
+                label: Comment
+                icon: fa-comment
+                items:
+                    -   label: Manage Comment
+                        route: comment_index
+                        groups: []
+                groups: []
+            user:
+                label: User
+                icon: fa-user
+                items:
+                    -   label: Manage User
+                        route: user_people_index
+                        groups: []
+                    -   label: User Group
+                        route: user_group_index
+                        groups: []
+        settings:
+            system:
+                label: System
+                icon: fa-tools
+                items:
+                    -   label: Basic Settings
+                        route: taxonomy_create
+                        groups: []
+                    -   label: Text Formatter
+                        route: teebb_formatter_index
+                        groups: []
+                groups: []
+
     mapping:
         directories: ['%kernel.project_dir%/src']
 

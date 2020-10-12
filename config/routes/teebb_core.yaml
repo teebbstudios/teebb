@@ -31,3 +31,7 @@ _teebb_formatter:
 
 security:
     resource: "@TeebbCoreBundle/Resources/config/routing/security.xml"
+
+_teebb_dashborad:
+    resource: "@TeebbCoreBundle/Resources/config/routing/dashboard.xml"
+    prefix: /admin

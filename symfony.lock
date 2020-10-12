@@ -137,6 +137,12 @@
     "imagine/imagine": {
         "version": "1.2.3"
     },
+    "knplabs/knp-menu": {
+        "version": "v3.1.2"
+    },
+    "knplabs/knp-menu-bundle": {
+        "version": "v3.0.0"
+    },
     "knplabs/knp-time-bundle": {
         "version": "v1.13.0"
     },
