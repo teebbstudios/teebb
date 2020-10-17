@@ -42,10 +42,10 @@ teebb_core:
                 icon: fa-list
                 items:
                     -   label: Add Menu
-                        route: taxonomy_create
+                        route: teebb_menu_create
                         groups: []
                     -   label: Manage Menu
-                        route: taxonomy_index
+                        route: teebb_menu_index
                         groups: []
                 groups: []
             comment:
@@ -117,6 +117,9 @@ teebb_core:
 
             autocompletejs:
                 js_path: vendor/autocomplete.js/js/autocomplete.jquery.min.js
+
+            nestable:
+                js_path: vendor/nestable/jquery.nestable.js
 
 oneup_flysystem:
     adapters:

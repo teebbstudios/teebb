@@ -21,6 +21,10 @@ _teebb_taxonomy:
     defaults:
         entity_type_service: '%entity_type.taxonomy.service%'
 
+_teebb_ajax:
+    resource: "@TeebbCoreBundle/Resources/config/routing/ajax.xml"
+    prefix: /admin
+
 _teebb_file:
     resource: "@TeebbCoreBundle/Resources/config/routing/file.xml"
     prefix: /admin
@@ -29,9 +33,16 @@ _teebb_formatter:
     resource: "@TeebbCoreBundle/Resources/config/routing/formatter.xml"
     prefix: /admin
 
-security:
-    resource: "@TeebbCoreBundle/Resources/config/routing/security.xml"
+_teebb_menu:
+    resource: "@TeebbCoreBundle/Resources/config/routing/menu.xml"
+    prefix: /admin
 
 _teebb_dashborad:
     resource: "@TeebbCoreBundle/Resources/config/routing/dashboard.xml"
     prefix: /admin
+
+security:
+    resource: "@TeebbCoreBundle/Resources/config/routing/security.xml"
+
+_teebb_front_content:
+    resource: "@TeebbCoreBundle/Resources/config/routing/front.xml"
