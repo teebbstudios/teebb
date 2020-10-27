@@ -21,10 +21,6 @@ _teebb_taxonomy:
     defaults:
         entity_type_service: '%entity_type.taxonomy.service%'
 
-_teebb_ajax:
-    resource: "@TeebbCoreBundle/Resources/config/routing/ajax.xml"
-    prefix: /admin
-
 _teebb_file:
     resource: "@TeebbCoreBundle/Resources/config/routing/file.xml"
     prefix: /admin
