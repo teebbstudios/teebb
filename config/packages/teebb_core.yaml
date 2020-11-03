@@ -71,8 +71,8 @@ teebb_core:
                 label: System
                 icon: fa-tools
                 items:
-                    -   label: Basic Settings
-                        route: taxonomy_create
+                    -   label: Settings
+                        route: teebb_system_option
                         groups: []
                     -   label: Text Formatter
                         route: teebb_formatter_index

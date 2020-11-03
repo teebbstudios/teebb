@@ -37,6 +37,10 @@ _teebb_dashborad:
     resource: "@TeebbCoreBundle/Resources/config/routing/dashboard.xml"
     prefix: /admin
 
+_teebb_options:
+    resource: "@TeebbCoreBundle/Resources/config/routing/options.xml"
+    prefix: /admin
+
 security:
     resource: "@TeebbCoreBundle/Resources/config/routing/security.xml"
 
