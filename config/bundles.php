@@ -23,4 +23,8 @@ return [
     BabDev\PagerfantaBundle\BabDevPagerfantaBundle::class => ['all' => true],
     Knp\Bundle\TimeBundle\KnpTimeBundle::class => ['all' => true],
     Knp\Bundle\MenuBundle\KnpMenuBundle::class => ['all' => true],
+    Sonata\Doctrine\Bridge\Symfony\SonataDoctrineSymfonyBundle::class => ['all' => true],
+    Sonata\Twig\Bridge\Symfony\SonataTwigSymfonyBundle::class => ['all' => true],
+    Sonata\Form\Bridge\Symfony\SonataFormBundle::class => ['all' => true],
+    Sonata\BlockBundle\SonataBlockBundle::class => ['all' => true],
 ];

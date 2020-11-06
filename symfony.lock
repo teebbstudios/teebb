@@ -137,6 +137,12 @@
     "imagine/imagine": {
         "version": "1.2.3"
     },
+    "jms/metadata": {
+        "version": "2.3.0"
+    },
+    "jms/serializer": {
+        "version": "3.10.0"
+    },
     "knplabs/knp-menu": {
         "version": "v3.1.2"
     },
@@ -242,6 +248,30 @@
         "files": [
             "config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "sonata-project/block-bundle": {
+        "version": "4.4.0"
+    },
+    "sonata-project/cache": {
+        "version": "2.0.1"
+    },
+    "sonata-project/doctrine-extensions": {
+        "version": "1.10.1"
+    },
+    "sonata-project/form-extensions": {
+        "version": "1.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.4",
+            "ref": "bfc222606aea5418345af70104d974a25dc7c441"
+        },
+        "files": [
+            "config/packages/sonata_form.yaml"
+        ]
+    },
+    "sonata-project/twig-extensions": {
+        "version": "1.4.1"
     },
     "stof/doctrine-extensions-bundle": {
         "version": "1.2",

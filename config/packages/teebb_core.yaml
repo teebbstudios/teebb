@@ -79,6 +79,66 @@ teebb_core:
                         groups: []
                 groups: []
 
+    #dashboard index blocks
+    blocks:
+        -   position: top
+            type: teebb.core.block.count    #block service type
+            class: col-xl-3 col-md-6 mb-4       #block class
+            groups: []                          #block show user groups
+            settings:
+                entity_class: Teebb\CoreBundle\Entity\Content      #block admin. admin 对应的entity 应含有 createAt 和 updateAt 两个时间属性。
+                label: contents(last month)                #block label
+                #translation_domain:                #default: messages
+                icon: fas fa-file-alt               #block icon
+                border: border-left-primary         #block border
+                #property: createdAt                #query object property. 要查询的Entity的属性以此属性统计数量
+                duration: -1 month                  #The count of content in a duration, must earlier than now. see php strtotime. default: -1 month
+                #template:                          #default template @TeebbCore/Block/count_block.html.twig
+
+        -   position: top
+            type: teebb.core.block.count    #block service type
+            class: col-xl-3 col-md-6 mb-4       #block class
+            groups: []                          #block show user groups
+            settings:
+                entity_class: Teebb\CoreBundle\Entity\Types\Types      #block admin. admin 对应的entity 应含有 createAt 和 updateAt 两个时间属性。
+                bundle: content
+                label: content_types                #block label
+                #translation_domain:                #default: messages
+                icon: fas fa-boxes                  #block icon
+                border: border-left-success         #block border
+                #property: createdAt                #query object property. 要查询的Entity的属性以此属性统计数量
+                duration: -1 month                  #The count of content in a duration, must earlier than now. see php strtotime. default: -1 month
+                #template:                          #default template @TeebbCore/Block/count_block.html.twig
+
+        -   position: top
+            type: teebb.core.block.count    #block service type
+            class: col-xl-3 col-md-6 mb-4       #block class
+            groups: []                          #block show user groups
+            settings:
+                entity_class: Teebb\CoreBundle\Entity\User      #block admin. admin 对应的entity 应含有 createAt 和 updateAt 两个时间属性。
+                label: users(last month)                #block label
+                #translation_domain:                #default: messages
+                icon: fas fa-user                   #block icon
+                border: border-left-info            #block border
+                #property: createdAt                #query object property. 要查询的Entity的属性以此属性统计数量
+                duration: -1 month                  #The count of content in a duration, must earlier than now. see php strtotime. default: -1 month
+                #template:                          #default template @TeebbCore/Block/count_block.html.twig
+
+        -   position: top
+            type: teebb.core.block.count    #block service type
+            class: col-xl-3 col-md-6 mb-4       #block class
+            groups: []                          #block show user groups
+            settings:
+                entity_class: Teebb\CoreBundle\Entity\Comment      #block admin. admin 对应的entity 应含有 createAt 和 updateAt 两个时间属性。
+                label: comments(last month)                #block label
+                #translation_domain:                #default: messages
+                icon: fas fa-comments               #block icon
+                border: border-left-warning        #block border
+                #property: createdAt                #query object property. 要查询的Entity的属性以此属性统计数量
+                duration: -1 month                  #The count of content in a duration, must earlier than now. see php strtotime. default: -1 month
+                #template:                          #default template @TeebbCore/Block/count_block.html.twig
+
+
     mapping:
         directories: ['%kernel.project_dir%/src']
 
