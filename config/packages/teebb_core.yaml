@@ -138,6 +138,44 @@ teebb_core:
                 duration: -1 month                  #The count of content in a duration, must earlier than now. see php strtotime. default: -1 month
                 #template:                          #default template @TeebbCore/Block/count_block.html.twig
 
+        -   position: left
+            type: teebb.core.block.text
+            settings:
+                label: Welcome to Teebb
+                content: Teebb Information
+                template: '@TeebbCore\blocks\dashboard_base_block.html.twig'
+
+        -   position: left
+            type: teebb.core.block.types
+            settings:
+                label: Content Types
+                bundle: content
+
+        -   position: left
+            type: teebb.core.block.contents
+            settings:
+                label: New users
+                entity_class: Teebb\CoreBundle\Entity\User
+                property: createdAt
+                order: DESC
+                template: '@TeebbCore\blocks\new_users.html.twig'
+
+        -   position: right
+            type: teebb.core.block.contents
+            settings:
+                label: Last contents
+                entity_class: Teebb\CoreBundle\Entity\Content
+                property: createdAt
+                order: DESC
+
+        -   position: right
+            type: teebb.core.block.contents
+            settings:
+                label: Last comments
+                entity_class: Teebb\CoreBundle\Entity\Comment
+                property: createdAt
+                order: DESC
+                template: '@TeebbCore\blocks\last_comments.html.twig'
 
     mapping:
         directories: ['%kernel.project_dir%/src']
