@@ -40,7 +40,7 @@
         "symfony/validator": "^5.0",
         "symfony/web-link": "^5.0",
         "symfony/yaml": "^5.0",
-        "teebbstudios/core-bundle": "^0.1"
+        "teebbstudios/core-bundle": "^0.1.0"
     },
     "require-dev": {
         "symfony/debug-pack": "*",

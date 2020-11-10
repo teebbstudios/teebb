@@ -656,7 +656,7 @@
         "version": "v5.0.8"
     },
     "teebbstudios/core-bundle": {
-        "version": "dev-master"
+        "version": "0.1.0"
     },
     "twig/extra-bundle": {
         "version": "v3.0.3"

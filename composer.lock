@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ed1ad8eb4f87c4c03942ccc2790cecc",
+    "content-hash": "8ffc067cc6a6d4790db418ceea0d165a",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -10001,12 +10001,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/teebbstudios/TeebbCoreBundle.git",
-                "reference": "73d917c62e795bb4d37afafe9b6a648151aeb9aa"
+                "reference": "a5390f61dd75e1de6feda69a718812850afefb9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/teebbstudios/TeebbCoreBundle/zipball/73d917c62e795bb4d37afafe9b6a648151aeb9aa",
-                "reference": "73d917c62e795bb4d37afafe9b6a648151aeb9aa",
+                "url": "https://api.github.com/repos/teebbstudios/TeebbCoreBundle/zipball/a5390f61dd75e1de6feda69a718812850afefb9c",
+                "reference": "a5390f61dd75e1de6feda69a718812850afefb9c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -10067,7 +10067,7 @@
                 "issues": "https://github.com/teebbstudios/TeebbCoreBundle/issues",
                 "source": "https://github.com/teebbstudios/TeebbCoreBundle/tree/0.1.0"
             },
-            "time": "2020-11-10T08:17:50+00:00"
+            "time": "2020-11-10T10:29:59+00:00"
         },
         {
             "name": "twig/extra-bundle",
