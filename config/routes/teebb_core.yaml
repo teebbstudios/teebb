@@ -11,7 +11,7 @@ _teebb_content:
 
 _teebb_comment:
     resource: "@TeebbCoreBundle/Resources/config/routing/comment.xml"
-    prefix: /admin
+#    prefix: /admin
     defaults:
         entity_type_service: '%entity_type.comment.service%'
 
