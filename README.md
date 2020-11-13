@@ -1,2 +1,2 @@
 #Teebb
-A content management system based on Symfony.
+The Teebb content management framework base on the Symfony.
