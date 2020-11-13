@@ -1,6 +1,6 @@
 {
     "name": "teebbstudios/teebb",
-    "description": "This bundle is Teebb core bundle.",
+    "description": "The Teebb content management framework base on the Symfony.",
     "keywords": [
         "teebb",
         "cms"
