@@ -1,6 +1,18 @@
 {
+    "name": "teebbstudios/teebb",
+    "description": "This bundle is Teebb core bundle.",
+    "keywords": [
+        "teebb",
+        "cms"
+    ],
+    "authors": [
+        {
+            "name": "Quan Weiwei",
+            "email": "qww.zone@gmail.com"
+        }
+    ],
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "require": {
         "php": "^7.2.5",
         "ext-ctype": "*",

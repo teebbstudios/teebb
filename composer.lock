@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ffc067cc6a6d4790db418ceea0d165a",
+    "content-hash": "46f5f14feffa678af7a37df10a1bec78",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -9997,23 +9997,11 @@
         },
         {
             "name": "teebbstudios/core-bundle",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/teebbstudios/TeebbCoreBundle.git",
-                "reference": "a5390f61dd75e1de6feda69a718812850afefb9c"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/teebbstudios/TeebbCoreBundle/zipball/a5390f61dd75e1de6feda69a718812850afefb9c",
-                "reference": "a5390f61dd75e1de6feda69a718812850afefb9c",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "type": "path",
+                "url": "../TeebbCoreBundle",
+                "reference": "a5390f61dd75e1de6feda69a718812850afefb9c"
             },
             "require": {
                 "api-platform/api-pack": "^1.2",
@@ -10048,7 +10036,11 @@
                     "Teebb\\CoreBundle\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Teebb\\CoreBundle\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -10063,11 +10055,9 @@
                 "cms",
                 "teebb"
             ],
-            "support": {
-                "issues": "https://github.com/teebbstudios/TeebbCoreBundle/issues",
-                "source": "https://github.com/teebbstudios/TeebbCoreBundle/tree/0.1.0"
-            },
-            "time": "2020-11-10T10:29:59+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "twig/extra-bundle",
@@ -11334,7 +11324,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "teebbstudios/core-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
