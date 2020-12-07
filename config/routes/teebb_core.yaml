@@ -23,7 +23,7 @@ _teebb_taxonomy:
 
 _teebb_file:
     resource: "@TeebbCoreBundle/Resources/config/routing/file.xml"
-    prefix: /admin
+
 
 _teebb_formatter:
     resource: "@TeebbCoreBundle/Resources/config/routing/formatter.xml"

@@ -257,13 +257,37 @@ liip_imagine:
                     allow_upscale: true
 
 fos_ck_editor:
+    default_config: full
     configs:
         full:
             toolbar: full
+            extraPlugins: "uploadfile, uploadimage"
+            uploadUrl: /file/upload
+            imageUploadURL: /file/upload
+            filebrowserUploadUrl: /file/upload
+            filebrowserFlashUploadUrl: /file/upload
+            filebrowserImageUploadUrl: /file/upload
+
         standard:
             toolbar: standard
+            extraPlugins: "uploadfile, uploadimage"
+            uploadUrl: /file/upload
+            imageUploadURL: /file/upload
+            filebrowserUploadUrl: /file/upload
+            filebrowserFlashUploadUrl: /file/upload
+            filebrowserImageUploadUrl: /file/upload
+
         basic:
             toolbar: basic
+
+    plugins:
+        uploadfile:
+            path: /bundles/teebbcore/ckeditor-plugins/uploadfile/
+            filename: plugin.js
+        uploadimage:
+            path: /bundles/teebbcore/ckeditor-plugins/uploadimage/
+            filename: plugin.js
+
 
 doctrine:
     orm:
