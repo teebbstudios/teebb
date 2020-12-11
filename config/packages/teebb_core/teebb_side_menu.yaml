@@ -60,12 +60,17 @@ teebb_core:
                 label: User
                 icon: fa-user
                 items:
+                    -   label: User Fields
+                        route: user_index_field
+                        route_params: {typeAlias: people}
+                        groups: []
                     -   label: Manage User
                         route: user_people_index
                         groups: []
                     -   label: User Group
                         route: user_group_index
                         groups: []
+                groups: []
         settings:
             system:
                 label: System
