@@ -76,23 +76,23 @@ teebb_core:
             settings:
                 label: New users
                 entity_class: Teebb\CoreBundle\Entity\User
-                property: createdAt
-                order: DESC
                 template: '@TeebbCore\blocks\new_users.html.twig'
+                order:
+                    createdAt: DESC
 
         -   position: right
             type: teebb.core.block.contents
             settings:
                 label: Last contents
                 entity_class: Teebb\CoreBundle\Entity\Content
-                property: createdAt
-                order: DESC
+                order:
+                    createdAt: DESC
 
         -   position: right
             type: teebb.core.block.contents
             settings:
                 label: Last comments
                 entity_class: Teebb\CoreBundle\Entity\Comment
-                property: createdAt
-                order: DESC
+                order:
+                    createdAt: DESC
                 template: '@TeebbCore\blocks\last_comments.html.twig'
