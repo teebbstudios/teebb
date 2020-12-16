@@ -76,8 +76,9 @@ teebb_core:
                 label: System
                 icon: fa-tools
                 items:
-                    -   label: Settings
-                        route: teebb_system_option
+                    -   label: System Settings
+                        route: teebb_update_option
+                        route_params: {optionName: system}
                         groups: []
                     -   label: Text Formatter
                         route: teebb_formatter_index
