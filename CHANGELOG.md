@@ -20,10 +20,10 @@
 1. teebb.core.block.content Block调整过滤条件
 
 0.1.5
-1.增加字段缓存
-2.前台页面增加DOM块级缓存
-3.系统设置优化
-4.bug修复
+1. 增加字段缓存  
+2. 前台页面增加DOM块级缓存  
+3. 系统设置优化  
+4. bug修复
 
 0.1.6
-1. prod生产环境下动态mapping字段，doctrine需要auto_generate_proxy_classes设置为true，对性能有影响，在1.x版本会修复
+1. prod环境下动态mapping字段，doctrine需要auto_generate_proxy_classes设置为true
