@@ -27,3 +27,6 @@
 
 0.1.6
 1. prod环境下动态mapping字段，doctrine需要auto_generate_proxy_classes设置为true
+
+0.1.7
+1. prod环境下动态mapping字段，doctrine需要auto_generate_proxy_classes设置为EVAL对性能更好些 
