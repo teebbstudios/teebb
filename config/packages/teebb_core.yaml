@@ -96,25 +96,29 @@ fos_ck_editor:
     configs:
         full:
             toolbar: full
-            extraPlugins: "codesnippet, uploadfile, uploadimage"
+            extraPlugins: 'codesnippet, uploadfile, uploadimage'
             uploadUrl: /file/upload
             imageUploadURL: /file/upload
             filebrowserUploadUrl: /file/upload
             filebrowserFlashUploadUrl: /file/upload
             filebrowserImageUploadUrl: /file/upload
             codeSnippet_theme: 'default'
+            removePlugins: 'exportpdf'
+
         standard:
             toolbar: standard
-            extraPlugins: "codesnippet, uploadfile, uploadimage"
+            extraPlugins: 'codesnippet, uploadfile, uploadimage'
             uploadUrl: /file/upload
             imageUploadURL: /file/upload
             filebrowserUploadUrl: /file/upload
             filebrowserFlashUploadUrl: /file/upload
             filebrowserImageUploadUrl: /file/upload
             codeSnippet_theme: 'default'
+            removePlugins: 'exportpdf'
 
         basic:
             toolbar: basic
+            removePlugins: 'exportpdf'
 
     plugins:
         codesnippet:

@@ -21,12 +21,21 @@ _teebb_taxonomy:
     defaults:
         entity_type_service: '%entity_type.taxonomy.service%'
 
+_teebb_user:
+    resource: "@TeebbCoreBundle/Resources/config/routing/user.xml"
+    prefix: /admin
+    defaults:
+        entity_type_service: '%entity_type.user.service%'
+
 _teebb_file:
     resource: "@TeebbCoreBundle/Resources/config/routing/file.xml"
 
-
 _teebb_formatter:
     resource: "@TeebbCoreBundle/Resources/config/routing/formatter.xml"
+    prefix: /admin
+
+_teebb_field:
+    resource: "@TeebbCoreBundle/Resources/config/routing/field.xml"
     prefix: /admin
 
 _teebb_menu:
