@@ -30,3 +30,6 @@
 
 0.1.7
 1. prod环境下动态mapping字段，doctrine需要auto_generate_proxy_classes设置为EVAL对性能更好些 
+
+0.1.8
+1. ckeditor添加codesnippet插件，修改ckeditor配置
