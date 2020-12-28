@@ -20,7 +20,7 @@
 .DS_Store
 node_modules
 composer.lock
-composer.local.json
+composer.json.dev
 public/vendor/
 public/uploads/
 ###< local ###
