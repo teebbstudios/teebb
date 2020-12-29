@@ -133,8 +133,8 @@ fos_ck_editor:
 
     toolbars:
         items:
-            'full.tools': ['Maximize', 'ShowBlocks', 'CodeSnippet'],
-            'standard.tools': ['Maximize', 'CodeSnippet'],
+            'full.tools': ['Maximize', 'ShowBlocks', 'CodeSnippet']
+            'standard.tools': ['Maximize', 'CodeSnippet']
 
 doctrine:
     orm:
