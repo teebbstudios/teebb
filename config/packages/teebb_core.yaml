@@ -96,7 +96,7 @@ fos_ck_editor:
     configs:
         full:
             toolbar: full
-            extraPlugins: 'codesnippet, uploadfile, uploadimage'
+            extraPlugins: 'codesnippet, uploadfile, uploadimage, markdown'
             uploadUrl: /file/upload
             imageUploadURL: /file/upload
             filebrowserUploadUrl: /file/upload
@@ -107,7 +107,7 @@ fos_ck_editor:
 
         standard:
             toolbar: standard
-            extraPlugins: 'codesnippet, uploadfile, uploadimage'
+            extraPlugins: 'codesnippet, uploadfile, uploadimage, markdown'
             uploadUrl: /file/upload
             imageUploadURL: /file/upload
             filebrowserUploadUrl: /file/upload
@@ -130,11 +130,14 @@ fos_ck_editor:
         uploadimage:
             path: /bundles/teebbcore/ckeditor-plugins/uploadimage/
             filename: plugin.js
+        markdown:
+            path: /bundles/teebbcore/ckeditor-plugins/markdown/
+            filename: plugin.js
 
     toolbars:
         items:
-            'full.tools': ['Maximize', 'ShowBlocks', 'CodeSnippet']
-            'standard.tools': ['Maximize', 'CodeSnippet']
+            'full.tools': ['Maximize', 'ShowBlocks', 'CodeSnippet', 'Markdown']
+            'standard.tools': ['Maximize', 'CodeSnippet', 'Markdown']
 
 doctrine:
     orm:

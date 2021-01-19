@@ -33,3 +33,6 @@
 
 0.1.8
 1. ckeditor添加codesnippet插件，修改ckeditor配置
+
+0.1.9 
+1. ckeditor添加markdown插件，修改ckeditor配置
