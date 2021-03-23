@@ -3,7 +3,10 @@ TEEBB是基于Symfony框架开发的一款可自由扩展的内容管理系统�
 TEEBB的原理设计参考了著名的Drupal，注重内容的扩展性与功能性，因为Drupal的学习曲线太高了，于是我开发了TEEBB，它更轻量也更容易上手。目前0.x版本已实现了内容管理和一些基本功能，
 注重内容类型网站的开发。在后续版本中将实现I18N（国际化），RESTful API，消息队列，缓存等等功能。如果您是Symfony初学者，TEEBB用到了Symfony的多个组件，是个不错的学习案例。  
 欢迎您进行Fork，并提交Pull Request，我们一起开发维护TEEBB，如果后续TEEBB有获利计划，我将优先通知您参与并获取相应利益。  
-![alt TEEBB控制台](docs/teebb_images/teebb-dashboard.png "TEEBB控制台")  
+![alt TEEBB控制台](docs/teebb_images/teebb-dashboard.png "TEEBB控制台")
+
+## 看 [TEEBB基础视频教程](https://www.teebb.com/course-detail/teebb-begin) 
+
 
 ### 1.TEEBB的下载和安装说明
 TEEBB的运行环境：   
