@@ -3,7 +3,10 @@ security:
         Teebb\CoreBundle\Entity\User:
             algorithm: auto
 
+    # https://symfony.com/doc/current/security/experimental_authenticators.html
+    enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+
     providers:
         user_provider:
             entity:
@@ -15,17 +18,22 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: lazy
+            lazy: true
             provider: user_provider
 
             logout:
                 path: teebb_user_logout
 
-            guard:
-                authenticators:
-                    - Teebb\CoreBundle\Security\LoginFormAuthenticator
+#            弃用，从symfony5.3版本起使用新的认证系统
+#            guard:
+#                authenticators:
+#                    - Teebb\CoreBundle\Security\LoginFormAuthenticator
+            custom_authenticator: Teebb\CoreBundle\Security\AppLoginFormAuthenticator
 
             user_checker: Teebb\CoreBundle\Security\UserChecker
+
+            login_throttling:
+                max_attempts: 3
 
             remember_me:
                 secret:   '%kernel.secret%'
