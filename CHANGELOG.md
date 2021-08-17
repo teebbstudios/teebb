@@ -36,3 +36,7 @@
 
 0.1.9 
 1. ckeditor添加markdown插件，修改ckeditor配置
+
+0.1.10
+1. Symfony5.3支持
+2. 使用新的用户登录认证系统
