@@ -1,4 +1,22 @@
 # TEEBB 0.x版本进入维护状态。即将重构代码，敬请期待。
+##### doctrine-bundle 2.3以上版本使用PhpArrayCache缓存ORM注解Metadata，会引起TEEBB在生产环境下重大BUG。
+```php
+// 需要修改 doctrine-bundle 源码解决此问题
+// vendor/doctrine/doctrine-bundle/DependencyInjection/DoctrineExtension.php
+protected function loadOrmCacheDrivers(array $entityManager, ContainerBuilder $container)
+    {
+        $this->loadCacheDriver('metadata_cache', $entityManager['name'], $entityManager['metadata_cache_driver'], $container);
+        $this->loadCacheDriver('result_cache', $entityManager['name'], $entityManager['result_cache_driver'], $container);
+        $this->loadCacheDriver('query_cache', $entityManager['name'], $entityManager['query_cache_driver'], $container);
+
+        if ($container->getParameter('kernel.debug')) {
+            return;
+        }
+        
+        // 需要注释下面一行代码解决BUG
+        // $this->registerMetadataPhpArrayCaching($entityManager['name'], $container);
+    }
+```
 
 # TEEBB内容管理系统使用文档
 TEEBB是基于Symfony框架开发的一款可自由扩展的内容管理系统。您可以自由使用本软件来构建您的博客、网站等应用。本项目将会长期开发维护，欢迎使用。  

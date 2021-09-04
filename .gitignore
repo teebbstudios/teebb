@@ -19,7 +19,6 @@
 .idea
 .DS_Store
 node_modules
-composer.lock
 composer.local.json
 public/vendor/
 public/uploads/
