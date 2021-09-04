@@ -4,18 +4,18 @@
 // 需要修改 doctrine-bundle 源码解决此问题
 // vendor/doctrine/doctrine-bundle/DependencyInjection/DoctrineExtension.php
 protected function loadOrmCacheDrivers(array $entityManager, ContainerBuilder $container)
-    {
-        $this->loadCacheDriver('metadata_cache', $entityManager['name'], $entityManager['metadata_cache_driver'], $container);
-        $this->loadCacheDriver('result_cache', $entityManager['name'], $entityManager['result_cache_driver'], $container);
-        $this->loadCacheDriver('query_cache', $entityManager['name'], $entityManager['query_cache_driver'], $container);
+{
+    $this->loadCacheDriver('metadata_cache', $entityManager['name'], $entityManager['metadata_cache_driver'], $container);
+    $this->loadCacheDriver('result_cache', $entityManager['name'], $entityManager['result_cache_driver'], $container);
+    $this->loadCacheDriver('query_cache', $entityManager['name'], $entityManager['query_cache_driver'], $container);
 
-        if ($container->getParameter('kernel.debug')) {
-            return;
-        }
-        
-        // 需要注释下面一行代码解决BUG
-        // $this->registerMetadataPhpArrayCaching($entityManager['name'], $container);
+    if ($container->getParameter('kernel.debug')) {
+        return;
     }
+    
+    // 需要注释下面一行代码解决BUG
+    // $this->registerMetadataPhpArrayCaching($entityManager['name'], $container);
+}
 ```
 
 # TEEBB内容管理系统使用文档
