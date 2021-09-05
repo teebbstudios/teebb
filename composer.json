@@ -1,81 +1,31 @@
 {
-    "name": "teebbstudios/teebb",
-    "description": "The Teebb content management framework base on the Symfony.",
-    "keywords": [
-        "teebb",
-        "cms"
-    ],
-    "authors": [
-        {
-            "name": "Quan Weiwei",
-            "email": "qww.zone@gmail.com"
-        }
-    ],
     "type": "project",
-    "license": "MIT",
+    "license": "proprietary",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
-        "php": "^7.2.5",
+        "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "api-platform/core": "^2.6",
-        "babdev/pagerfanta-bundle": "^2.4",
-        "composer/package-versions-deprecated": "1.11.99.3",
-        "doctrine/annotations": "^1.0",
-        "doctrine/common": "^2",
-        "doctrine/doctrine-bundle": "^2",
-        "doctrine/doctrine-migrations-bundle": "^2",
-        "doctrine/orm": "^2",
-        "friendsofsymfony/ckeditor-bundle": "^2.2",
-        "friendsofsymfony/jsrouting-bundle": "^2.6",
-        "knplabs/knp-menu-bundle": "^3.0",
-        "knplabs/knp-time-bundle": "^1.13",
-        "liip/imagine-bundle": "^2.3",
-        "nelmio/cors-bundle": "^2.1",
-        "oneup/flysystem-bundle": "^3.5",
-        "pagerfanta/pagerfanta": "^2.3",
-        "phpdocumentor/reflection-docblock": "^5.2",
-        "sensio/framework-extra-bundle": "^5.1",
-        "sonata-project/block-bundle": "^4.4",
-        "stof/doctrine-extensions-bundle": "^1.4",
-        "symfony/asset": "^5.0",
-        "symfony/console": "^5.0",
-        "symfony/dotenv": "^5.0",
-        "symfony/expression-language": "^5.0",
+        "symfony/console": "5.3.*",
+        "symfony/dotenv": "5.3.*",
         "symfony/flex": "^1.3.1",
-        "symfony/form": "^5.0",
-        "symfony/framework-bundle": "^5.0",
-        "symfony/http-client": "^5.0",
-        "symfony/intl": "^5.0",
-        "symfony/mailer": "^5.0",
-        "symfony/mime": "^5.0",
-        "symfony/monolog-bundle": "^3.1",
-        "symfony/notifier": "^5.0",
-        "symfony/process": "^5.0",
-        "symfony/property-access": "^5.0",
-        "symfony/property-info": "^5.0",
-        "symfony/security-bundle": "^5.0",
-        "symfony/serializer": "^5.0",
-        "symfony/string": "^5.0",
-        "symfony/translation": "^5.0",
-        "symfony/twig-bundle": "^5.0",
-        "symfony/validator": "^5.0",
-        "symfony/web-link": "^5.0",
-        "symfony/yaml": "^5.0",
-        "teebbstudios/core-bundle": "^0.1.0",
+        "symfony/framework-bundle": "5.3.*",
+        "symfony/runtime": "5.3.*",
+        "symfony/twig-bundle": "5.3.*",
+        "symfony/yaml": "5.3.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "symfony/browser-kit": "^5.3",
-        "symfony/css-selector": "^5.3",
-        "symfony/debug-bundle": "^5.3",
-        "symfony/maker-bundle": "^1.0",
-        "symfony/phpunit-bridge": "^5.3",
-        "symfony/stopwatch": "^5.3",
-        "symfony/web-profiler-bundle": "^5.3"
+        "symfony/debug-bundle": "5.3.*",
+        "symfony/maker-bundle": "^1.33",
+        "symfony/monolog-bundle": "^3.0",
+        "symfony/stopwatch": "5.3.*",
+        "symfony/web-profiler-bundle": "5.3.*"
     },
     "config": {
+        "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
         },
@@ -92,13 +42,9 @@
         }
     },
     "replace": {
-        "paragonie/random_compat": "2.*",
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*",
-        "symfony/polyfill-php71": "*",
-        "symfony/polyfill-php70": "*",
-        "symfony/polyfill-php56": "*"
+        "symfony/polyfill-php72": "*"
     },
     "scripts": {
         "auto-scripts": {
@@ -118,7 +64,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "^5.0"
+            "require": "5.3.*"
         }
     }
 }

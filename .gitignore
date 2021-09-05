@@ -9,25 +9,7 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
-###> symfony/phpunit-bridge ###
-.phpunit
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
-
-###> local ###
+###> phpstorm & MacOS ###
 .idea
 .DS_Store
-node_modules
-composer.local.json
-public/vendor/
-public/uploads/
-###< local ###
-
-###> liip/imagine-bundle ###
-/public/media/cache/
-###< liip/imagine-bundle ###
-###> phpunit/phpunit ###
-/phpunit.xml
-.phpunit.result.cache
-###< phpunit/phpunit ###
+###< phpstorm & MacOS ###
