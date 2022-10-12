@@ -38,7 +38,7 @@
         "chart.js": "^2.8.0",
         "datatables.net-bs4": "^1.10.19",
         "dropzone": "^5.5.1",
-        "fabric": "^1.7.22",
+        "fabric": "^5.2.4",
         "file-saver": "^2.0.2",
         "jquery": "^3.5.1",
         "jquery.easing": "^1.4.1",
